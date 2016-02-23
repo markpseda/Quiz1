@@ -29,10 +29,9 @@ public class Main {
 		double attempts = input.nextDouble();
 		
 		input.close();
-		
+		double rating = calculateRating(touchDowns, yards,interceptions, completions, attempts);
 		System.out.print("This QB's passer rating is: "); 
-		System.out.printf("%.2f",calculateRating(touchDowns, yards, //2 decimal place accuracy
-				interceptions, completions, attempts));
+		System.out.printf("%.2f",rating); 					//two decimal place accuracy
 	}
 	
 	private static double calculateRating(double touchDowns, double yards,
